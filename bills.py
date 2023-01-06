@@ -1,16 +1,5 @@
 def bills(unit):
 
-#For first 50 units Rs. 0.5/unit
-#For next 100 units Rs. 0.75/unit
-#For next 100 units Rs. 1.20/unit
-#For unit above 250 Rs. 1.50/unit
-#An additional surcharge of 20% is added to the bill
-
-#45
-#60
-#220
-
-    
  if   unit <= 50:
       amt = unit * 0.50 #  amt = 45*0.5 = 22.5
       print ("Bill =", amt+ amt*0.2) # Bill = 22.5
@@ -35,9 +24,6 @@ def bills(unit):
       print ("Bill =", amt+ amt*0.2)
 
 
-
-
-bills(150)    
-bills(45)
-bills(220)
-bills(1000)
+x = input("Enter number of Units: ")
+bills(int(x))
+     
